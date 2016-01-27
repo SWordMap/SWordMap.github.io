@@ -1,2 +1,2 @@
 # SWordMap.github.io
-appendix materials of SWordMap
+supplementary material of SWordMap
