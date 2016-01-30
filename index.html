@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+h1 {
+    text-align: center;
+}
+</style>
+</head>
 <body>
 <h1>SWordMap: Learning Semantically Related Words in Software through Word Embedding</h1>
 <h2>Introduction</h2>
 <p>We publish our identified semantic related words in order for any scientific work of other people.</p>
 <h2>Experiments</h2>
 <h3>RQ1: How accurate are the semantically related words produced by SWordMap?</h3>
+<p>This RQ is to evaluate the accuracy of the identified semantically related words. We randomly sample 100 words from the results produced by SWordMap, and manually verify if the semantically related words of each sampled word are truly relevant. The accuracy is measured as the average number of correct semantic related words in the top 10 returned results (i.e., Precision@10).
+We also check how many correct results cannot be found in WordNet~\cite{wordnet} or a dictionary~\cite{dictionary} and further classify them into 6 categories: \emph{synonym}, \emph{related}, \emph{antonym}, \emph{abbreviation}, \emph{morphology}, \emph{spelling}.</p>
 <h3>RQ2: Can identified semantically related words improve concern location?</h3>
 <h3>RQ3: Can identified semantically related words improve local code search?</h3>
+<h2>Data</h2>
+
 <p>results trained from 343MB StackOverflow questions tagged with "java" is available:<a href="swordmap/content_java_processed.txt" target="_blank">[txt]</a>&nbsp;<a href="swordmap/content_java_processed.zip" target="_blank">[zip]</a></p>
 <p>results trained from 7.59GB StackOverflow posts:<a href="swordmap/stackoverflow_processed.txt" target="_blank">[txt]</a>&nbsp;<a href="swordmap/stackoverflow_processed.zip" target="_blank">[zip]</a></p>
 </body>
