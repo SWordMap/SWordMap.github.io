@@ -18,11 +18,11 @@ th, td {
 <body>
 <h1>SWordMap: Learning Semantically Related Words in Software through Word Embedding</h1>
 <h2>Introduction</h2>
-<p>We publish our identified semantic related words in order for any scientific work of other people.</p>
+<p>We publish our detailed experiment results and identified semantic related words.</p>
 <h2>Experiments</h2>
 <h3>RQ1: How accurate are the semantically related words produced by SWordMap?</h3>
-<table style="width:100%">
-	<caption>Table 1 : Sample Results</caption>
+<table>
+	<caption><h3>Table 1 : Sample Results</h3></caption>
 	<tr>
 		<th>sample size</th>
 		<th>correct results</th>
@@ -45,20 +45,15 @@ th, td {
 		<th>46</th>
 		<th>573</th>
 	</tr>
-	<tr>
-		<th>100*10</th>
-		<th>756</th>
-		<th>68</th>
-		<th>500</th>
-		<th>13</th>
-		<th>24</th>
-		<th>105</th>
-		<th>46</th>
-		<th>573</th>
-	</tr>
 </table>
 <h3>RQ2: Can identified semantically related words improve concern location?</h3>
+<!--><table>
+	<caption><h3>Table 2 : Results of Concern Location</h3></caption>
+	<tr>
+	</tr>
+</table><-->
 <h3>RQ3: Can identified semantically related words improve local code search?</h3>
+One author constructs a set of queries about each Java projects after reading the project homepage. Another author then manually read the project source code to check if the concerns truly exist in the code, and select the available ones to build the final test set (contains 25 queries). The test set is available <a href="swordmap/evaluation/testset.xlsx" target="_blank">here</a>.
 <h2>Data</h2>
 <p>Results trained from 343MB StackOverflow questions tagged with "java" is available:<a href="swordmap/content_java_processed.txt" target="_blank">[txt]</a>&nbsp;<a href="swordmap/content_java_processed.zip" target="_blank">[zip]</a></p>
 <p>Results trained from 7.59GB StackOverflow posts:<a href="swordmap/stackoverflow_processed.txt" target="_blank">[txt]</a>&nbsp;<a href="swordmap/stackoverflow_processed.zip" target="_blank">[zip]</a></p>
